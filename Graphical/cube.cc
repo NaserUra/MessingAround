@@ -33,8 +33,8 @@ float calcZ(const int& i, const int& j, const int& k){
 }
 
 void clearBuffer(){
-    for(int i = 0; i < height_; i++){
-        for(int j = 0; j < width_; j++){
+    for(unsigned int i = 0; i < height_; i++){
+        for(unsigned int j = 0; j < width_; j++){
             screen[i][j] = ' '; 
         }
     }
@@ -42,8 +42,8 @@ void clearBuffer(){
 
 void drawBuffer(){
     std::cout << "\033[H";
-    for(int i = 0; i < height_; i++){
-        for(int j = 0; j < width_; j++){
+    for(unsigned int i = 0; i < height_; i++){
+        for(unsigned int j = 0; j < width_; j++){
             putchar(screen[i][j]);
         }
     }
@@ -74,7 +74,6 @@ int main(){
             }
         } 
         drawBuffer();
-
         A += 0.005;
         B += 0.005;
         usleep(1000);
