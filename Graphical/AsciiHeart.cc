@@ -66,12 +66,12 @@ void drawHeart(const float& x_, const float& y_, const float& z_, int ch){
 int main(){
     while(true){
         clearBuffer();
-        for(float y_ = -heart_size; y_ < heart_size; y_+=0.3){
-            for(float x_ = -heart_size; x_ < heart_size; x_+=0.3){
-                if(x_*x_ + y_*y_ -100 < 10){     
+        for(float y_ = -heart_size; y_ < heart_size; y_+=0.1){
+            for(float x_ = -heart_size; x_ < heart_size; x_+=0.1){
+                if(std::pow((x_*x_ + y_*y_ - 1),3)  < std::abs(x_*x_*y_*y_*y_) + 100){     
                     drawHeart(y_, x_, -heart_size, '#');
-                    drawHeart(y_, x_, 0, '*');
-                    drawHeart(y_, x_, heart_size, '@');
+                    //drawHeart(y_, x_, 0, '*');
+                    //drawHeart(y_, x_, heart_size, '@');
                     //if(100 - x_*x_ - y_*y_ > 0){
                     //    drawHeart(y_, x_, std::sqrt(100 - x_*x_ - y_*y_), '.');
                     //    drawHeart(y_, x_, -std::sqrt(100 - x_*x_ - y_*y_), '*');
