@@ -51,23 +51,16 @@ void drawHeart(const float& x_, const float& y_, const float& z_, int ch){
     float x = calcX(x_, y_, z_);
     float y = calcY(x_, y_, z_);
     float z = calcZ(x_, y_, z_) + depth_;
-
-    std::string ascii = ".:-=~*#@";
     
     int dx = x - (int)width_/2;
     int dy = y - (int)height_/2;
 
-    //double value = std::pow((x*x + y*y - 1), 3) - x*x*y*y;
-    //if(std::abs(value) < 5000){
-    //std::cout << z << std::endl;
     int xp = (int)(x/z * depth_ + width_ / 2);
     int yp = (int)(y/z * depth_ + height_ / 2);
-    //std::cout << xp << " " << yp << "\n";
     
     if(yp < 0)
         yp = 0;
     screen[yp][xp] = ch;
-    //
 }
 
 int main(){
@@ -89,7 +82,6 @@ int main(){
         drawBuffer();
         A += 0.05;
         B += 0.05;
-        //C += 0.05;
         usleep(20000);
     }
 
