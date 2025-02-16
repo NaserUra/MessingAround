@@ -6,9 +6,7 @@
 float A, B, C; //Winkel
 
 const int size_ = 12;
-const int width_ = 160;
-const int height_ = 44;
-const int depth_ = 60;
+const int width_ = 160, height_ = 44, depth_ = 60;
 
 char screen[height_][width_];
 
