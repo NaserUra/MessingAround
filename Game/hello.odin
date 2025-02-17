@@ -51,15 +51,16 @@ init_cb :: proc "c" (){
         shader = g.shader,
         layout = {
             attrs = {
-                ATTR_main_pos  = { format = .FLOAT2 }
+                ATTR_main_pos = { format = .FLOAT2 },
+                ATTR_main_col = { format = .FLOAT4 }
             }
         }
     })
 
     vertices := []f32 {
-        -0.3, -0.3,
-           0,  0.3,
-         0.3, -0.3,
+        -0.3, -0.3, 1,0,0,1,
+           0,  0.3, 0,1,0,1,
+         0.3, -0.3, 0,0,1,1,
     }
 
     g.vertex_buffer = sg.make_buffer({
