@@ -16,6 +16,10 @@ Globals :: struct{
 }
 g: ^Globals
 
+x :f32= 0.3
+
+
+
 main :: proc(){
     context.logger = log.create_console_logger()
     default_context = context
@@ -58,9 +62,9 @@ init_cb :: proc "c" (){
     })
 
     vertices := []f32 {
-        -0.3, -0.3, 1,0,0,1,
-           0,  0.3, 0,1,0,1,
-         0.3, -0.3, 0,0,1,1,
+        -x, -x, 1,0,0,1,
+           0,  x, 0,1,0,1,
+         x, -x, 0,0,1,1,
     }
 
     g.vertex_buffer = sg.make_buffer({
@@ -87,6 +91,9 @@ frame_cb :: proc "c" (){
     sg.apply_bindings({
         vertex_buffers = { 0 = g.vertex_buffer }
     })
+    
+    x += 0.1
+
     sg.draw(0, 3, 1)
 
     sg.end_pass()
