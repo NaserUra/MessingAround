@@ -1,7 +1,7 @@
-CMakeFiles/testOpGL.dir/HelloWorld.cc.o: \
- /home/CruelAngel/Documents/Programming/FirstProgramm/HelloWorld.cc \
+CMakeFiles/testOpGL.dir/Main.cc.o: \
+ /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/Main.cc \
  /usr/include/stdc-predef.h \
- /home/CruelAngel/Documents/Programming/FirstProgramm/display.hh \
+ /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/display.hh \
  /usr/include/GL/glew.h /usr/include/c++/14.2.1/cstddef \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -302,12 +302,12 @@ CMakeFiles/testOpGL.dir/HelloWorld.cc.o: \
  /usr/include/c++/14.2.1/bits/basic_ios.tcc \
  /usr/include/c++/14.2.1/bits/ostream.tcc /usr/include/c++/14.2.1/istream \
  /usr/include/c++/14.2.1/bits/istream.tcc \
- /home/CruelAngel/Documents/Programming/FirstProgramm/shader.hh \
+ /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/shader.hh \
  /usr/include/c++/14.2.1/fstream /usr/include/c++/14.2.1/bits/codecvt.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/14.2.1/bits/fstream.tcc \
- /home/CruelAngel/Documents/Programming/FirstProgramm/mesh.hh \
+ /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/mesh.hh \
  /usr/local/include/glm/glm.hpp /usr/local/include/glm/detail/_fixes.hpp \
  /usr/local/include/glm/detail/setup.hpp /usr/include/c++/14.2.1/cassert \
  /usr/include/assert.h /usr/local/include/glm/simd/platform.h \

@@ -2,7 +2,7 @@ testOpGL: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o \
-  CMakeFiles/testOpGL.dir/HelloWorld.cc.o \
+  CMakeFiles/testOpGL.dir/Main.cc.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libg.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libGLEW.so \
@@ -60,7 +60,7 @@ testOpGL: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o:
 
-CMakeFiles/testOpGL.dir/HelloWorld.cc.o:
+CMakeFiles/testOpGL.dir/Main.cc.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libg.a:
 

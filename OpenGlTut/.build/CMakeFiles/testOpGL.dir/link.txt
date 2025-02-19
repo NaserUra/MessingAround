@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/testOpGL.dir/link.d CMakeFiles/testOpGL.dir/HelloWorld.cc.o -o testOpGL  -lg -lGL -lGLEW -lSDL2 -lXext -lX11 -lm -lglut -lXi -lXmu
+/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/testOpGL.dir/link.d CMakeFiles/testOpGL.dir/Main.cc.o -o testOpGL  -lg -lGL -lGLEW -lSDL2 -lXext -lX11 -lm -lglut -lXi -lXmu

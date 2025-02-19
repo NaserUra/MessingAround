@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/CruelAngel/Documents/Programming/FirstProgramm/HelloWorld.cc" "CMakeFiles/testOpGL.dir/HelloWorld.cc.o" "gcc" "CMakeFiles/testOpGL.dir/HelloWorld.cc.o.d"
+  "/home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/Main.cc" "CMakeFiles/testOpGL.dir/Main.cc.o" "gcc" "CMakeFiles/testOpGL.dir/Main.cc.o.d"
   "" "testOpGL" "gcc" "CMakeFiles/testOpGL.dir/link.d"
   )
 

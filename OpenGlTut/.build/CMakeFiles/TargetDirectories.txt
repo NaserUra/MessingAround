@@ -1,3 +1,3 @@
-/home/CruelAngel/Documents/Programming/FirstProgramm/.build/CMakeFiles/testOpGL.dir
-/home/CruelAngel/Documents/Programming/FirstProgramm/.build/CMakeFiles/edit_cache.dir
-/home/CruelAngel/Documents/Programming/FirstProgramm/.build/CMakeFiles/rebuild_cache.dir
+/home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/.build/CMakeFiles/testOpGL.dir
+/home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/.build/CMakeFiles/edit_cache.dir
+/home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/.build/CMakeFiles/rebuild_cache.dir

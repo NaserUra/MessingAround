@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/CruelAngel/Documents/Programming/FirstProgramm
+CMAKE_SOURCE_DIR = /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/CruelAngel/Documents/Programming/FirstProgramm/.build
+CMAKE_BINARY_DIR = /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/.build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/CruelAngel/Documents/Programming/FirstProgramm/.build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/CruelAngel/Documents/Programming/FirstProgramm/.build/CMakeFiles /home/CruelAngel/Documents/Programming/FirstProgramm/.build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/.build/CMakeFiles /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/.build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/CruelAngel/Documents/Programming/FirstProgramm/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/CruelAngel/Documents/Programming/MessingAround/OpenGlTut/.build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,29 @@ testOpGL/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testOpGL.dir/build.make CMakeFiles/testOpGL.dir/build
 .PHONY : testOpGL/fast
 
-HelloWorld.o: HelloWorld.cc.o
-.PHONY : HelloWorld.o
+Main.o: Main.cc.o
+.PHONY : Main.o
 
 # target to build an object file
-HelloWorld.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testOpGL.dir/build.make CMakeFiles/testOpGL.dir/HelloWorld.cc.o
-.PHONY : HelloWorld.cc.o
+Main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testOpGL.dir/build.make CMakeFiles/testOpGL.dir/Main.cc.o
+.PHONY : Main.cc.o
 
-HelloWorld.i: HelloWorld.cc.i
-.PHONY : HelloWorld.i
+Main.i: Main.cc.i
+.PHONY : Main.i
 
 # target to preprocess a source file
-HelloWorld.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testOpGL.dir/build.make CMakeFiles/testOpGL.dir/HelloWorld.cc.i
-.PHONY : HelloWorld.cc.i
+Main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testOpGL.dir/build.make CMakeFiles/testOpGL.dir/Main.cc.i
+.PHONY : Main.cc.i
 
-HelloWorld.s: HelloWorld.cc.s
-.PHONY : HelloWorld.s
+Main.s: Main.cc.s
+.PHONY : Main.s
 
 # target to generate assembly for a file
-HelloWorld.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testOpGL.dir/build.make CMakeFiles/testOpGL.dir/HelloWorld.cc.s
-.PHONY : HelloWorld.cc.s
+Main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testOpGL.dir/build.make CMakeFiles/testOpGL.dir/Main.cc.s
+.PHONY : Main.cc.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... testOpGL"
-	@echo "... HelloWorld.o"
-	@echo "... HelloWorld.i"
-	@echo "... HelloWorld.s"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
 .PHONY : help
 
 
