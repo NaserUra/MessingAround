@@ -7,9 +7,16 @@ int main(int argc, char *argv[])
     Display display(800, 600, "Hello World!");
     Shader shader("../res/basicShader"); //add right path
     Vertex vertices[] = {   
-        Vertex(glm::vec3(-0.5,-0.5,0)),                    
-        Vertex(glm::vec3(0,0.5,0)),
-        Vertex(glm::vec3(0.5,-0.5,0))
+        Vertex(glm::vec3(0.5,0.5,0)),                    
+        Vertex(glm::vec3(0.5,-0.5,0)),
+
+        Vertex(glm::vec3(-0.5,-0.5,0)),
+        Vertex(glm::vec3(-0.5, 0.5, 0.0))
+    };
+
+    unsigned int indices[] ={
+        0, 1, 3,
+        1, 2, 3
     };
 
     Mesh mesh(vertices, sizeof(vertices)/sizeof(vertices[0]));
